@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, ArrowUpRight, Code, Terminal, Check } from 'lucide-react';
+import { Github, ArrowUpRight, Code, Terminal, Check, ExternalLink } from 'lucide-react';
 import { projectsData } from '../data/portfolioData';
 
 export default function Projects() {
@@ -27,7 +27,8 @@ export default function Projects() {
               key={project.id}
               className="p-6 sm:p-8 bg-white border border-zinc-200 rounded-lg hover:border-zinc-400 transition-all shadow-[0_1px_2px_rgba(0,0,0,0.02)]"
             >
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 pb-3 border-b border-zinc-200">
+              {/* Header */}
+              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-3 pb-3 border-b border-zinc-200">
                 <div className="flex items-center gap-3">
                   <span className="font-mono text-xs text-zinc-400 font-semibold">
                     PROJECT {index + 1}
@@ -38,6 +39,7 @@ export default function Projects() {
                   </h3>
                 </div>
 
+                {/* Top GitHub Link Badge */}
                 <a
                   href={project.githubUrl}
                   target="_blank"
@@ -78,7 +80,7 @@ export default function Projects() {
               )}
 
               {/* Technologies List */}
-              <div>
+              <div className="mb-6">
                 <div className="text-xs font-mono uppercase tracking-wider text-zinc-400 mb-2">
                   Technologies:
                 </div>
@@ -92,6 +94,24 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
+              </div>
+
+              {/* Prominent Footer GitHub Action Button */}
+              <div className="pt-4 border-t border-zinc-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2 text-xs font-mono font-medium text-white bg-zinc-900 hover:bg-zinc-800 rounded transition-colors shadow-sm w-full sm:w-auto cursor-pointer"
+                >
+                  <Github className="w-4 h-4" />
+                  <span>View Source Code on GitHub</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-zinc-400" />
+                </a>
+
+                <span className="text-xs font-mono text-zinc-500 truncate">
+                  {project.githubUrl}
+                </span>
               </div>
 
             </article>
