@@ -19,7 +19,7 @@ export const personalInfo = {
     "I am a Computer Science & Engineering undergraduate specializing in Artificial Intelligence at Karunya Institute of Technology and Sciences (2023–2027). I am actively building my foundational skills in software development, AI applications, Generative AI, and Machine Learning. I enjoy turning theoretical concepts into practical software tools—from AST-driven carbon estimation to multilingual RAG assistants.",
 
   // Contact Links
-  email: "priyanka.example@email.com", // EDITABLE: e.g. priyanka.b@gmail.com
+  email: "priyubalu29@gmail.com",
   github: "https://github.com/PRIYANKA-BALASUBRAMANIAN",
   linkedin: "https://linkedin.com/in/your-profile", // EDITABLE: e.g. https://linkedin.com/in/priyanka-b
   resumePath: "/resume.pdf",
