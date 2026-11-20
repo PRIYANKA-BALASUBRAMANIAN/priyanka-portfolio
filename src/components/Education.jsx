@@ -16,51 +16,56 @@ export default function Education() {
             <h2 className="text-xl sm:text-2xl font-bold text-zinc-950 mt-1">
               Academic Record
             </h2>
+            <p className="text-xs text-zinc-500 mt-2">
+              Undergraduate engineering degree and international certified module training.
+            </p>
           </div>
 
-          {/* Academic Card */}
-          <div className="md:col-span-9">
-            <div className="border border-zinc-200 rounded-lg p-6 bg-[#fafafa]">
-              
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 pb-4 border-b border-zinc-200">
-                <div>
-                  <h3 className="text-lg font-bold text-zinc-900">
-                    {educationData.college}
-                  </h3>
-                  <p className="text-sm font-medium text-zinc-700 mt-0.5">
-                    {educationData.degree}
-                  </p>
-                  <p className="text-xs text-zinc-500 font-mono mt-1">
-                    {educationData.location}
-                  </p>
-                </div>
+          {/* Academic Cards List */}
+          <div className="md:col-span-9 space-y-6">
+            {educationData.map((edu, idx) => (
+              <div key={idx} className="border border-zinc-200 rounded-lg p-6 bg-[#fafafa]">
                 
-                <div className="sm:text-right shrink-0">
-                  <span className="inline-block text-xs font-mono text-zinc-600 bg-white border border-zinc-200 px-2.5 py-1 rounded">
-                    {educationData.period}
-                  </span>
-                  <div className="text-sm font-semibold text-zinc-900 mt-2 font-mono">
-                    CGPA: <span className="text-zinc-950 font-bold">{educationData.cgpa}</span> / 10
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 pb-4 border-b border-zinc-200">
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-zinc-900">
+                      {edu.college}
+                    </h3>
+                    <p className="text-sm font-medium text-zinc-700 mt-0.5">
+                      {edu.degree}
+                    </p>
+                    <p className="text-xs text-zinc-500 font-mono mt-1">
+                      {edu.location}
+                    </p>
+                  </div>
+                  
+                  <div className="sm:text-right shrink-0">
+                    <span className="inline-block text-xs font-mono text-zinc-600 bg-white border border-zinc-200 px-2.5 py-1 rounded">
+                      {edu.period}
+                    </span>
+                    <div className="text-xs sm:text-sm font-semibold text-zinc-900 mt-1.5 font-mono">
+                      {edu.cgpa.includes('/') ? `CGPA: ${edu.cgpa}` : edu.cgpa}
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Curriculum & Key Highlights */}
-              <div className="pt-4 space-y-2">
-                <div className="text-xs font-mono uppercase tracking-wider text-zinc-400">
-                  Curriculum Highlights:
+                {/* Highlights */}
+                <div className="pt-4 space-y-2">
+                  <div className="text-xs font-mono uppercase tracking-wider text-zinc-400">
+                    Highlights:
+                  </div>
+                  <ul className="space-y-1.5 text-xs sm:text-sm text-zinc-700">
+                    {edu.highlights.map((item, hIdx) => (
+                      <li key={hIdx} className="flex items-start gap-2">
+                        <span className="text-zinc-400 mt-0.5">—</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="space-y-1.5 text-sm text-zinc-700">
-                  {educationData.highlights.map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <span className="text-zinc-400 mt-1">—</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
 
-            </div>
+              </div>
+            ))}
           </div>
 
         </div>

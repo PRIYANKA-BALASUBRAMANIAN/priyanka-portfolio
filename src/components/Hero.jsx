@@ -77,7 +77,7 @@ export default function Hero({ onOpenResumeModal }) {
             className="inline-flex items-center gap-1.5 hover:text-zinc-950 transition-colors font-medium"
           >
             <Linkedin className="w-4 h-4 text-zinc-700" />
-            <span>LinkedIn Profile</span>
+            <span>linkedin.com/in/b-priyanka-4a8b972a2</span>
             <ArrowUpRight className="w-3.5 h-3.5 text-zinc-400" />
           </a>
 

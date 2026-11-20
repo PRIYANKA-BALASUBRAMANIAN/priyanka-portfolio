@@ -81,6 +81,15 @@ export default function Contact() {
                 </div>
               </div>
 
+              {personalInfo.phone && (
+                <div className="pt-2 border-t border-zinc-100">
+                  <span className="text-zinc-400 block mb-0.5">Phone:</span>
+                  <a href={`tel:${personalInfo.phone}`} className="text-zinc-800 hover:text-zinc-950 font-semibold">
+                    {personalInfo.phone}
+                  </a>
+                </div>
+              )}
+
               <div className="pt-2 border-t border-zinc-100">
                 <span className="text-zinc-400 block mb-0.5">Location:</span>
                 <span className="text-zinc-800">{personalInfo.location}</span>
