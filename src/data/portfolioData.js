@@ -18,7 +18,7 @@ export const personalInfo = {
   
   // EDITABLE: Replace with your actual email, LinkedIn, and GitHub links
   email: "priyanka.example@email.com", // EDITABLE: e.g. priyanka.b@gmail.com
-  github: "https://github.com/your-username", // EDITABLE: e.g. https://github.com/priyankab
+  github: "https://github.com/PRIYANKA-BALASUBRAMANIAN",
   linkedin: "https://linkedin.com/in/your-profile", // EDITABLE: e.g. https://linkedin.com/in/priyanka-b
   resumePath: "/resume.pdf", // EDITABLE: place your resume in public/resume.pdf or link to Google Drive
 };
@@ -111,7 +111,7 @@ export const projects = [
       "A machine learning-based application for analyzing and estimating software carbon emissions using Python, Abstract Syntax Tree (AST) analysis, Streamlit, and local LLMs to evaluate code efficiency and compute footprint.",
     techStack: ["Python", "AST Analysis", "Streamlit", "Local LLMs", "Machine Learning"],
     category: "AI / Sustainability",
-    githubUrl: "https://github.com/your-username/ecopulse", // EDITABLE PLACEHOLDER
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/ecopulse", // EDITABLE PLACEHOLDER
     demoUrl: "", // EDITABLE PLACEHOLDER: leave empty if no live deployment
     featured: true,
     highlights: [
@@ -128,7 +128,7 @@ export const projects = [
       "A multilingual document question-answering system using Python, FastAPI, Qdrant vector database, semantic embeddings, OCR preprocessing, and Large Language Models for grounded responses across varied document types.",
     techStack: ["Python", "FastAPI", "Qdrant", "Embeddings", "OCR", "LLMs"],
     category: "Generative AI",
-    githubUrl: "https://github.com/your-username/hybrid-rag-assistant", // EDITABLE PLACEHOLDER
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/hybrid-rag-assistant", // EDITABLE PLACEHOLDER
     demoUrl: "", // EDITABLE PLACEHOLDER
     featured: true,
     highlights: [
@@ -145,7 +145,7 @@ export const projects = [
       "A log analysis application utilizing Python, spaCy NLP pipelines, regular expression tokenization, and Streamlit to detect anomalous log activities, malicious intrusion attempts, and suspicious patterns.",
     techStack: ["Python", "spaCy", "Regex", "Streamlit", "NLP"],
     category: "Security / NLP",
-    githubUrl: "https://github.com/your-username/log-threat-analytics", // EDITABLE PLACEHOLDER
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/log-threat-analytics", // EDITABLE PLACEHOLDER
     demoUrl: "", // EDITABLE PLACEHOLDER
     featured: false,
     highlights: [
@@ -162,7 +162,7 @@ export const projects = [
       "A machine learning project built with Python, Linear Regression, OneHotEncoder for categorical preprocessing, and Streamlit to deliver accurate price estimations based on vehicle characteristics.",
     techStack: ["Python", "Machine Learning", "Linear Regression", "OneHotEncoder", "Streamlit"],
     category: "Machine Learning",
-    githubUrl: "https://github.com/your-username/car-price-prediction", // EDITABLE PLACEHOLDER
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/car-price-prediction", // EDITABLE PLACEHOLDER
     demoUrl: "", // EDITABLE PLACEHOLDER
     featured: false,
     highlights: [
@@ -179,7 +179,7 @@ export const projects = [
       "A full-stack web application built using React, Node.js, Express, and MongoDB featuring user ordering workflows, menu management, and an intelligent AI chatbot for customer inquiries and recommendations.",
     techStack: ["React", "Node.js", "Express", "MongoDB", "AI Chatbot", "REST API"],
     category: "Full Stack / AI",
-    githubUrl: "https://github.com/your-username/upside-down-diner", // EDITABLE PLACEHOLDER
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/upside-down-diner", // EDITABLE PLACEHOLDER
     demoUrl: "", // EDITABLE PLACEHOLDER
     featured: true,
     highlights: [
