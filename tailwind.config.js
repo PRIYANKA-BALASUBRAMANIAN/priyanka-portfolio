@@ -4,36 +4,33 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        background: '#090d16',
-        surface: '#0f172a',
-        'surface-card': 'rgba(15, 23, 42, 0.75)',
-        'surface-border': 'rgba(255, 255, 255, 0.08)',
+        background: '#fafafa',
+        surface: '#ffffff',
+        'surface-subtle': '#f4f4f5',
+        'border-subtle': '#e4e4e7',
+        'border-strong': '#d4d4d8',
+        charcoal: {
+          900: '#18181b',
+          800: '#27272a',
+          700: '#3f3f46',
+          600: '#52525b',
+          500: '#71717a',
+          400: '#a1a1aa',
+        },
         accent: {
-          cyan: '#06b6d4',
-          indigo: '#6366f1',
-          violet: '#8b5cf6',
-          emerald: '#10b981',
-          rose: '#f43f5e'
+          DEFAULT: '#1e3a8a', // Deep refined navy / slate-blue accent
+          hover: '#172554',
+          subtle: '#f0f5ff',
+          ring: '#93c5fd',
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-        mono: ['Fira Code', 'JetBrains Mono', 'monospace'],
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
       },
-      animation: {
-        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'float': 'float 6s ease-in-out infinite',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
-        }
-      }
     },
   },
   plugins: [],

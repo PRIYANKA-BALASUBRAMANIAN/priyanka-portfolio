@@ -1,274 +1,208 @@
 /**
- * Portfolio Data Configuration for B. Priyanka
+ * Portfolio Data — B. Priyanka
  * 
- * All placeholders (GitHub, LinkedIn, Email, Demo links) are centralized here
- * and clearly marked with EDITABLE comments so you can replace them anytime.
+ * Clean, genuine data configuration for an undergraduate developer.
+ * Easily update links, placeholders, and descriptions.
  */
 
 export const personalInfo = {
   name: "B. Priyanka",
-  role: "Aspiring AI Engineer | Computer Science Undergraduate",
-  degree: "B.Tech Computer Science and Engineering (Artificial Intelligence)",
+  role: "Computer Science and Engineering Undergraduate — Artificial Intelligence",
+  degree: "B.Tech — Computer Science and Engineering (Artificial Intelligence)",
   college: "Karunya Institute of Technology and Sciences",
   graduationYear: "2027",
   cgpa: "8.68",
   location: "Tamil Nadu, India",
-  summary:
-    "Undergraduate student in Computer Science and Engineering with a specialization in Artificial Intelligence. Passionate about architecting intelligent systems, Generative AI workflows, full-stack applications, and scalable problem-solving. Constantly seeking to bridge foundational machine learning models with real-world software engineering.",
   
-  // EDITABLE: Replace with your actual email, LinkedIn, and GitHub links
+  // Natural summary introducing the undergraduate student
+  introduction:
+    "I am a Computer Science & Engineering undergraduate specializing in Artificial Intelligence at Karunya Institute of Technology and Sciences (2023–2027). I am actively building my foundational skills in software development, AI applications, Generative AI, and Machine Learning. I enjoy turning theoretical concepts into practical software tools—from AST-driven carbon estimation to multilingual RAG assistants.",
+
+  // Contact Links
   email: "priyanka.example@email.com", // EDITABLE: e.g. priyanka.b@gmail.com
   github: "https://github.com/PRIYANKA-BALASUBRAMANIAN",
   linkedin: "https://linkedin.com/in/your-profile", // EDITABLE: e.g. https://linkedin.com/in/priyanka-b
-  resumePath: "/resume.pdf", // EDITABLE: place your resume in public/resume.pdf or link to Google Drive
+  resumePath: "/resume.pdf",
 };
 
-export const aboutData = {
-  headline: "Building intelligent software at the intersection of AI and modern engineering.",
-  description: [
-    "I am an undergraduate Computer Science Engineering student specializing in Artificial Intelligence at Karunya Institute of Technology and Sciences, graduating in 2027 with a current CGPA of 8.68.",
-    "My technical focus revolves around Artificial Intelligence, Retrieval-Augmented Generation (RAG), Natural Language Processing, and full-stack software development. I have hands-on experience designing and implementing practical machine learning pipelines, AST-driven emission estimators, and semantic search systems.",
-    "Driven by analytical thinking, attention to detail, and a genuine eagerness to learn, I continuously refine my skills through hands-on project work, industry internships, and professional certifications. I am excited to contribute to innovative teams building impactful, future-ready technology."
-  ],
-  highlights: [
-    { label: "Degree Specialization", value: "B.Tech CSE (AI)" },
-    { label: "Academic Standing", value: "8.68 CGPA" },
-    { label: "Graduation Cohort", value: "Class of 2027" },
-    { label: "Core Competency", value: "AI, RAG & Full-Stack" }
+export const aboutContent = {
+  paragraphs: [
+    "I am currently an undergraduate student pursuing my B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence at Karunya Institute of Technology and Sciences in Tamil Nadu, India. Across my coursework and personal projects, I maintain a consistent academic record with an 8.68 CGPA.",
+    "My interest in technology began with a curiosity about how software systems process and organize information. As I explored programming in Python and Java, I became fascinated by Artificial Intelligence—specifically how algorithms can extract meaning from unstructured data, answer natural language questions, and analyze complex patterns.",
+    "I actively develop my skills by building practical software applications. Rather than studying models in isolation, I focus on integrating machine learning pipelines with functional backends (FastAPI, Express) and clean user interfaces (React, Streamlit).",
+    "As an undergraduate, I consider myself a dedicated learner. I enjoy diving into new tools, reading technical documentation, and iteratively refining my code to develop reliable, problem-focused solutions."
   ]
 };
 
-export const skillsCategories = [
+export const areasOfInterest = [
+  "Artificial Intelligence",
+  "Machine Learning",
+  "Generative AI",
+  "Natural Language Processing",
+  "Retrieval-Augmented Generation (RAG)",
+  "Full-Stack Development",
+  "Software Engineering"
+];
+
+export const skillsData = [
   {
-    category: "AI / Machine Learning",
-    description: "Core intelligence frameworks, LLM integrations & semantic retrieval",
-    skills: [
-      { name: "Machine Learning", level: "Advanced" },
-      { name: "NLP", level: "Intermediate" },
-      { name: "Generative AI", level: "Intermediate" },
-      { name: "RAG Architecture", level: "Intermediate" }
-    ],
-    color: "from-cyan-500 to-blue-500"
+    category: "Programming",
+    items: ["Java", "Python", "JavaScript"]
   },
   {
-    category: "Programming Languages",
-    description: "Core algorithms, data structures & systems design",
-    skills: [
-      { name: "Python", level: "Proficient" },
-      { name: "Java", level: "Intermediate" },
-      { name: "JavaScript", level: "Proficient" }
-    ],
-    color: "from-blue-500 to-indigo-500"
+    category: "Frontend",
+    items: ["HTML", "CSS", "React"]
   },
   {
-    category: "Frontend Development",
-    description: "Responsive, accessible & performant user interfaces",
-    skills: [
-      { name: "React", level: "Proficient" },
-      { name: "HTML5", level: "Proficient" },
-      { name: "CSS3 / Tailwind", level: "Proficient" }
-    ],
-    color: "from-indigo-500 to-violet-500"
-  },
-  {
-    category: "Backend Development",
-    description: "Scalable APIs, server-side architecture & endpoints",
-    skills: [
-      { name: "FastAPI", level: "Proficient" },
-      { name: "Node.js", level: "Intermediate" },
-      { name: "Express", level: "Intermediate" }
-    ],
-    color: "from-violet-500 to-purple-500"
+    category: "Backend",
+    items: ["Node.js", "Express.js", "FastAPI"]
   },
   {
     category: "Databases",
-    description: "Relational queries and document/vector stores",
-    skills: [
-      { name: "MySQL", level: "Intermediate" },
-      { name: "MongoDB", level: "Intermediate" }
-    ],
-    color: "from-purple-500 to-pink-500"
+    items: ["MySQL", "MongoDB"]
   },
   {
-    category: "Developer Tools",
-    description: "Version control, API testing & rapid prototyping",
-    skills: [
-      { name: "Git", level: "Proficient" },
-      { name: "GitHub", level: "Proficient" },
-      { name: "Streamlit", level: "Proficient" },
-      { name: "Postman", level: "Intermediate" }
-    ],
-    color: "from-emerald-500 to-teal-500"
+    category: "AI and ML",
+    items: ["Machine Learning", "NLP", "Generative AI", "RAG"]
+  },
+  {
+    category: "Tools",
+    items: ["Git", "GitHub", "Streamlit", "Postman"]
   }
 ];
 
-export const projects = [
+export const educationData = {
+  college: "Karunya Institute of Technology and Sciences",
+  degree: "B.Tech — Computer Science and Engineering (Artificial Intelligence)",
+  period: "2023 – 2027",
+  cgpa: "8.68",
+  location: "Coimbatore, Tamil Nadu, India",
+  highlights: [
+    "Specialization curriculum focused on AI, Knowledge Systems, and Deep Learning foundations",
+    "Core Computer Science fundamentals: Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks",
+    "Current Cumulative Grade Point Average: 8.68 / 10.0"
+  ]
+};
+
+export const projectsData = [
   {
     id: "ecopulse",
     title: "EcoPulse",
-    tagline: "Software Carbon Emissions Estimation & Analysis",
+    subtitle: "Software Carbon Emission Analysis & Optimization",
     description:
-      "A machine learning-based application for analyzing and estimating software carbon emissions using Python, Abstract Syntax Tree (AST) analysis, Streamlit, and local LLMs to evaluate code efficiency and compute footprint.",
-    techStack: ["Python", "AST Analysis", "Streamlit", "Local LLMs", "Machine Learning"],
-    category: "AI / Sustainability",
-    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/ecopulse", // EDITABLE PLACEHOLDER
-    demoUrl: "", // EDITABLE PLACEHOLDER: leave empty if no live deployment
-    featured: true,
-    highlights: [
-      "Performs static code parsing via Python AST to estimate computational intensity",
-      "Interactive Streamlit dashboard to visualize emission estimates",
-      "Integrates local LLMs to suggest greener code refactoring patterns"
+      "A software carbon emission analysis project built to evaluate the environmental footprint of Python code. It uses Abstract Syntax Tree (AST) parsing to evaluate algorithmic intensity and CodeCarbon tracking to estimate computational emissions, offering suggestions through local LLMs to improve execution efficiency.",
+    technologies: ["Python", "Streamlit", "AST analysis", "CodeCarbon", "Machine Learning", "local LLMs"],
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/ecopulse",
+    details: [
+      "Performs static code inspection via Python's AST module to detect resource-heavy loops and operations.",
+      "Integrates CodeCarbon tracking logic to calculate estimated energy usage and carbon emission metrics.",
+      "Delivers an interactive Streamlit user interface with refactoring guidance powered by local language models."
     ]
   },
   {
     id: "hybrid-rag-assistant",
     title: "Hybrid RAG Assistant",
-    tagline: "Multilingual Document Question-Answering System",
+    subtitle: "Multilingual Document Question-Answering Application",
     description:
-      "A multilingual document question-answering system using Python, FastAPI, Qdrant vector database, semantic embeddings, OCR preprocessing, and Large Language Models for grounded responses across varied document types.",
-    techStack: ["Python", "FastAPI", "Qdrant", "Embeddings", "OCR", "LLMs"],
-    category: "Generative AI",
-    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/hybrid-rag-assistant", // EDITABLE PLACEHOLDER
-    demoUrl: "", // EDITABLE PLACEHOLDER
-    featured: true,
-    highlights: [
-      "Semantic vector indexing and retrieval powered by Qdrant",
-      "OCR pipeline for parsing scanned files and multilingual documents",
-      "FastAPI asynchronous backend with contextual grounded QA"
+      "A multilingual document question-answering application that allows users to upload documents and retrieve relevant, grounded information through natural-language questions. Combines OCR preprocessing, dense/sparse embeddings, and vector database indexing.",
+    technologies: ["Python", "FastAPI", "Streamlit", "BGE-M3", "Qdrant", "PaddleOCR", "LLMs"],
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/hybrid-rag-assistant",
+    details: [
+      "Utilizes PaddleOCR for text extraction from scanned documents and multilingual PDFs.",
+      "Computes semantic embeddings using BGE-M3 and indexes vectors in a Qdrant vector database.",
+      "Exposes query endpoints via an asynchronous FastAPI backend and an interactive Streamlit UI."
     ]
   },
   {
     id: "log-threat-analytics",
     title: "Log Threat Analytics",
-    tagline: "Suspicious Pattern Detection in Server Logs",
+    subtitle: "Suspicious Pattern Detection & Security Analysis",
     description:
-      "A log analysis application utilizing Python, spaCy NLP pipelines, regular expression tokenization, and Streamlit to detect anomalous log activities, malicious intrusion attempts, and suspicious patterns.",
-    techStack: ["Python", "spaCy", "Regex", "Streamlit", "NLP"],
-    category: "Security / NLP",
-    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/log-threat-analytics", // EDITABLE PLACEHOLDER
-    demoUrl: "", // EDITABLE PLACEHOLDER
-    featured: false,
-    highlights: [
-      "Rule-based and NLP-assisted pattern matching for threat signals",
-      "Automated extraction of IP addresses, HTTP status anomalies, and payload vectors",
-      "Streamlit UI for real-time log ingestion and interactive alert inspection"
+      "A log analysis application that identifies suspicious patterns and anomalies in server access logs using text processing, regular expressions, and NLP threat detection techniques.",
+    technologies: ["Python", "spaCy", "Regex", "Streamlit"],
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/log-threat-analytics",
+    details: [
+      "Parses unstructured server access and authentication logs using robust regex patterns.",
+      "Applies spaCy NLP pipelines to categorize log messages and identify anomalous request patterns.",
+      "Visualizes event frequencies, IP anomalies, and alert flags via a lightweight Streamlit dashboard."
     ]
   },
   {
     id: "car-price-prediction",
     title: "Car Price Prediction",
-    tagline: "Supervised Regression Modeling for Vehicle Valuation",
+    subtitle: "Supervised Regression Modeling for Vehicle Valuation",
     description:
-      "A machine learning project built with Python, Linear Regression, OneHotEncoder for categorical preprocessing, and Streamlit to deliver accurate price estimations based on vehicle characteristics.",
-    techStack: ["Python", "Machine Learning", "Linear Regression", "OneHotEncoder", "Streamlit"],
-    category: "Machine Learning",
-    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/car-price-prediction", // EDITABLE PLACEHOLDER
-    demoUrl: "", // EDITABLE PLACEHOLDER
-    featured: false,
-    highlights: [
-      "Data preprocessing pipeline incorporating OneHotEncoding and feature scaling",
-      "Linear regression modeling trained on curated automotive attributes",
-      "Streamlit interactive interface enabling instant inference on user inputs"
+      "A machine learning application predicting used vehicle prices based on mileage, year, make, and technical specifications, utilizing supervised linear regression and categorical encoding.",
+    technologies: ["Python", "Machine Learning", "Linear Regression", "OneHotEncoder", "Streamlit"],
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/car-price-prediction",
+    details: [
+      "Cleans and preprocesses automotive dataset features using OneHotEncoder for categorical variables.",
+      "Trains a supervised Linear Regression model evaluated against standard regression metrics.",
+      "Provides an interactive Streamlit interface for instant price estimation on user-input features."
     ]
   },
   {
     id: "upside-down-diner",
     title: "Upside Down Diner",
-    tagline: "Full-Stack Restaurant Portal with Embedded AI Chatbot",
+    subtitle: "Full-Stack Restaurant Portal with Embedded AI Chatbot",
     description:
-      "A full-stack web application built using React, Node.js, Express, and MongoDB featuring user ordering workflows, menu management, and an intelligent AI chatbot for customer inquiries and recommendations.",
-    techStack: ["React", "Node.js", "Express", "MongoDB", "AI Chatbot", "REST API"],
-    category: "Full Stack / AI",
-    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/upside-down-diner", // EDITABLE PLACEHOLDER
-    demoUrl: "", // EDITABLE PLACEHOLDER
-    featured: true,
-    highlights: [
-      "Responsive React client integrated with Express and Node.js REST endpoints",
-      "Persistent MongoDB database for item catalog and customer orders",
-      "Integrated AI conversational assistant providing instant menu guidance"
+      "A full-stack web application for restaurant browsing, ordering workflows, and automated customer assistance through an integrated conversational chatbot.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "AI Chatbot"],
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/upside-down-diner",
+    details: [
+      "Built with a responsive React frontend communicating with Express and Node.js REST APIs.",
+      "Manages menu items, category schemas, and user order states in MongoDB.",
+      "Includes an embedded conversational assistant answering customer questions regarding menu items."
     ]
   }
 ];
 
-export const internships = [
+export const internshipsData = [
   {
     role: "AI/ML Intern",
     company: "Edunet Foundation",
-    duration: "Internship Period [EDITABLE: e.g. June 2024 - July 2024]",
-    location: "Remote / Hybrid [EDITABLE]",
+    duration: "Internship Period (e.g. 2024)",
     description:
-      "Engaged in hands-on Artificial Intelligence and Machine Learning training, model design, and real-world problem sets. Collaborated on data preprocessing, feature engineering, and model evaluation routines.",
-    learnings: [
-      "Trained and evaluated supervised and unsupervised machine learning algorithms",
-      "Applied data exploratory analysis (EDA) techniques on varied datasets",
-      "Collaborated on practical applied AI project deliverables and presentations"
+      "Participated in hands-on Artificial Intelligence and Machine Learning training. Worked on practical exercises including data preprocessing, exploratory data analysis, and evaluating foundational machine learning models.",
+    points: [
+      "Trained and compared performance across supervised classification and regression algorithms.",
+      "Performed data cleaning, missing value handling, and feature exploratory analysis on sample datasets.",
+      "Gained practical experience implementing machine learning concepts using standard Python libraries."
     ]
   },
   {
     role: "Web Development Intern",
     company: "EI Systems",
-    duration: "Internship Period [EDITABLE: e.g. Jan 2024 - Feb 2024]",
-    location: "Remote / Hybrid [EDITABLE]",
+    duration: "Internship Period (e.g. 2024)",
     description:
-      "Worked on core web development technologies, responsive interface construction, API integration, and user-centric component architecture to build performant web layouts.",
-    learnings: [
-      "Designed responsive UI components ensuring cross-device compatibility",
-      "Implemented clean client-side logic and structured asynchronous API interactions",
-      "Practiced code versioning and collaborative Git development workflows"
+      "Worked on core web development assignments, focusing on structured HTML/CSS layouts, JavaScript programming, component architecture, and responsive user interfaces.",
+    points: [
+      "Developed responsive web page layouts tested across mobile and desktop viewports.",
+      "Implemented client-side interactivity and clean asynchronous API requests.",
+      "Practiced Git version control and structured codebase organization."
     ]
   }
 ];
 
-export const certifications = [
+export const certificationsData = [
   {
     title: "Oracle Certified Foundation Associate",
     issuer: "Oracle",
-    category: "Cloud & Systems",
-    issueDate: "Verified [EDITABLE]",
-    credentialUrl: "https://www.oracle.com/certifications/ [EDITABLE]", // EDITABLE PLACEHOLDER
-    description: "Foundational validation of cloud infrastructure, core compute services, and database principles."
+    description: "Validation of foundational cloud concepts, compute architecture, and database infrastructure."
   },
   {
     title: "Deloitte Data Analytics Job Simulation",
-    issuer: "Deloitte / Forage",
-    category: "Data & Business Intelligence",
-    issueDate: "Completed [EDITABLE]",
-    credentialUrl: "https://forage.com/ [EDITABLE]", // EDITABLE PLACEHOLDER
-    description: "Practical simulation tackling exploratory data analysis, data storytelling, and strategic analytical recommendations."
+    issuer: "Deloitte (Forage)",
+    description: "Simulation of real-world data analysis tasks, exploratory data investigation, and presentation of insights."
   },
   {
     title: "Python Essential Certifications",
-    issuer: "Cisco / Python Institute [EDITABLE]",
-    category: "Programming & Algorithms",
-    issueDate: "Certified [EDITABLE]",
-    credentialUrl: "https://www.credly.com/ [EDITABLE]", // EDITABLE PLACEHOLDER
-    description: "Comprehensive mastery of Python programming fundamentals, object-oriented concepts, and standard data structures."
+    issuer: "Cisco / Python Institute",
+    description: "Verification of fundamental Python programming knowledge, data structures, algorithms, and modular design."
   },
   {
-    title: "CCNA Introduction & Networking Certifications",
+    title: "CCNA Introduction and Networking Certifications",
     issuer: "Cisco Networking Academy",
-    category: "Networking & Protocols",
-    issueDate: "Completed [EDITABLE]",
-    credentialUrl: "https://www.netacad.com/ [EDITABLE]", // EDITABLE PLACEHOLDER
-    description: "In-depth understanding of IP addressing, routing and switching, OSI model layers, and secure network infrastructure."
+    description: "Foundational networking principles, IPv4/IPv6 addressing, subnetting, and network protocols."
   }
 ];
-
-export const education = {
-  degree: "B.Tech in Computer Science and Engineering",
-  specialization: "Artificial Intelligence",
-  institution: "Karunya Institute of Technology and Sciences",
-  location: "Coimbatore, Tamil Nadu, India",
-  duration: "2023 – 2027",
-  cgpa: "8.68",
-  cgpaScale: "10.0",
-  coursework: [
-    "Data Structures & Algorithms",
-    "Object-Oriented Programming (Java/Python)",
-    "Artificial Intelligence & Knowledge Systems",
-    "Machine Learning Foundations",
-    "Database Management Systems (MySQL/MongoDB)",
-    "Computer Networks & Protocols",
-    "Operating Systems & Architecture"
-  ]
-};

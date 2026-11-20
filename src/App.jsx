@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Education from './components/Education';
+import AreasOfInterest from './components/AreasOfInterest';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Internships from './components/Internships';
-import Certifications from './components/Certifications';
-import Education from './components/Education';
+import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ResumeModal from './components/ResumeModal';
@@ -14,33 +14,26 @@ import ResumeModal from './components/ResumeModal';
 export default function App() {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
 
-  const handleOpenResumeModal = () => setIsResumeModalOpen(true);
-  const handleCloseResumeModal = () => setIsResumeModalOpen(false);
-
   return (
-    <div className="min-h-screen bg-[#090d16] text-slate-100 flex flex-col font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
-      {/* Navigation */}
-      <Navbar onOpenResumeModal={handleOpenResumeModal} />
+    <div className="min-h-screen bg-[#fafafa] text-[#18181b] font-sans antialiased selection:bg-zinc-200">
+      <Navbar onOpenResumeModal={() => setIsResumeModalOpen(true)} />
 
-      {/* Main Content Sections */}
-      <main className="flex-grow">
-        <Hero onOpenResumeModal={handleOpenResumeModal} />
+      <main>
+        <Hero onOpenResumeModal={() => setIsResumeModalOpen(true)} />
         <About />
+        <Education />
+        <AreasOfInterest />
         <Skills />
         <Projects />
-        <Internships />
-        <Certifications />
-        <Education />
+        <Experience />
         <Contact />
       </main>
 
-      {/* Footer */}
       <Footer />
 
-      {/* Resume Modal */}
       <ResumeModal
         isOpen={isResumeModalOpen}
-        onClose={handleCloseResumeModal}
+        onClose={() => setIsResumeModalOpen(false)}
       />
     </div>
   );
