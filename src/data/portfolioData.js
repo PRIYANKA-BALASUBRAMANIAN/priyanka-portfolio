@@ -133,7 +133,7 @@ export const projectsData = [
     description:
       "An end-to-end web application built with React.js frontend and Node.js/Express.js backend for restaurant orders, reservations, menu management, and an AI-powered customer assistant.",
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "REST APIs", "AI Chatbot"],
-    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/upside-down-diner",
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/RESTAURANT-MANAGEMENT-",
     details: [
       "Built an end-to-end web application (React.js front end, Node.js/Express.js back end) for orders, reservations and menu management.",
       "Designed RESTful APIs and MongoDB data models with JWT authentication, request validation and database indexing.",
@@ -147,7 +147,7 @@ export const projectsData = [
     description:
       "A hybrid NLP security pipeline utilizing spaCy Named Entity Recognition and Regular Expressions to detect PII and high-risk threat indicators in server logs.",
     technologies: ["Python", "Streamlit", "spaCy", "Regular Expressions", "Plotly", "NLP"],
-    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/log-threat-analytics",
+    githubUrl: "https://github.com/PRIYANKA-BALASUBRAMANIAN/cyberthreat-ai-project-",
     details: [
       "Built a hybrid NLP security pipeline using spaCy NER and Regex to detect PII and high-risk tokens in security logs.",
       "Developed a real-time Streamlit/Plotly dashboard with Shannon entropy analysis and a Policy Gateway for automated risk enforcement."
